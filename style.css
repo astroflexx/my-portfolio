@@ -542,8 +542,8 @@ textarea {
     width: 100%;
     margin-top: 20px;
     margin-bottom: -70px;
-    color: var(--text-color);
-    background-color: var(--background-color); 
+    color: var(--background-color);
+    background-color: var(--text-color);
     padding: 10px 15px;
     font-weight: 550;
     border-radius: 2px;
