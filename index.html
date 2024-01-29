@@ -201,10 +201,15 @@
                 </p>
             </div>
             <div class="container2">
-                <form action="post" class="contactform" netlify>
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <textarea type="text" placeholder="Message" class="message"></textarea>
+                <form name="contact" method="POST" class="contactform" data-netlify="true"
+                    data-netlify-honeypot="bot-field">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" class="message" required></textarea>
+                    <div style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                    </div>
+
                     <button type="submit" class="send">Send</button>
                 </form>
             </div>
