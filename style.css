@@ -224,10 +224,10 @@ h1 {
     display: inline;
 }
 
-#about-me,
+/* #about-me,
 #contact-me {
     max-width: 1225px;
-}
+} */
 
 @media screen and (max-width: 1500px) {
     .navbar-links {
@@ -458,6 +458,33 @@ img {
     border-color: var(--text-color);
 }
 
+#contact-me {
+    margin-right: 230px;
+}
+
+#about-me {
+    margin-right: 230px;
+}
+
+@media screen and (max-width: 2000px) {
+    .projects-container {
+        max-width: 1285px;
+    }
+
+    .project1 {
+        margin-right: 55px;
+    }
+
+    .project3 {
+        margin-right: 55px;
+        margin-top: 30px;
+    }
+
+    .project4 {
+        margin-top: 30px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     .project1,
@@ -467,9 +494,22 @@ img {
         width: 100%;
     }
 
+    .project1, .project3 {
+        margin-right: 0;
+    }
+
+    .project3, .project4 {
+        margin-top: 0;
+    }
+
     .view-code,
     .live-demo {
         padding: 5px 8px;
+    }
+
+    #about-me,
+    #contact-me {
+        margin-right: 0;
     }
 }
 
@@ -483,7 +523,7 @@ img {
     height: fit-content;
     display: flex;
     flex-direction: row;
-    max-width: 1250px;
+    /* max-width: 1250px; */
 }
 
 .container1 {
@@ -564,6 +604,7 @@ textarea {
 @media screen and (max-width: 1000px) {
     #contact-me {
         height: auto;
+        margin-right: 0;
     }
 
     .contactdiv {
