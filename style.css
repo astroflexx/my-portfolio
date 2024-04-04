@@ -494,11 +494,13 @@ img {
         width: 100%;
     }
 
-    .project1, .project3 {
+    .project1,
+    .project3 {
         margin-right: 0;
     }
 
-    .project3, .project4 {
+    .project3,
+    .project4 {
         margin-top: 0;
     }
 
